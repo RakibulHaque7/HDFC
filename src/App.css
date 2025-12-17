@@ -1,0 +1,166 @@
+/* ---------------------------------
+   Global Layout (Modern Look)
+----------------------------------*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  color: #e2e8f0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 0;
+}
+
+/* Frosted glass container */
+.page {
+  max-width: 440px;
+  width: 90%;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 32px;
+  border-radius: 18px;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.35);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* ---------------------------------
+   Typography (Sharper + Premium)
+----------------------------------*/
+h1 {
+  font-size: 26px;
+  margin: 0 0 14px 0;
+  font-weight: 700;
+  color: #f1f5f9;
+}
+
+p {
+  font-size: 15px;
+  color: #cbd5e1;
+  margin-bottom: 18px;
+}
+
+/* ---------------------------------
+   Inputs (Soft & Modern)
+----------------------------------*/
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="file"] {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1.5px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.07);
+  color: #f8fafc;
+  font-size: 15px;
+  margin-bottom: 16px;
+  transition: border 0.2s, background 0.2s;
+}
+
+input:focus {
+  outline: none;
+  border-color: #60a5fa;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* ---------------------------------
+   Buttons (Gradient + Clean)
+----------------------------------*/
+button {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 12px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  background: linear-gradient(135deg, #3b82f6, #6366f1);
+  box-shadow: 0 4px 15px rgba(99,102,241,0.35);
+  transition: 0.25s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(99,102,241,0.45);
+}
+
+button:disabled {
+  background: rgba(148,163,184,0.4);
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* Dark buttons */
+.doc-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.doc-buttons button {
+  background: linear-gradient(135deg, #475569, #334155);
+}
+
+.doc-buttons button:hover {
+  background: linear-gradient(135deg, #64748b, #475569);
+}
+
+/* ---------------------------------
+   Preview Image (Smooth Glass Frame)
+----------------------------------*/
+.preview-container {
+  margin-top: 18px;
+  text-align: center;
+}
+
+.preview-container img {
+  max-width: 100%;
+  max-height: 260px;
+  border-radius: 14px;
+  border: 1.5px solid rgba(255,255,255,0.2);
+  object-fit: cover;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.45);
+}
+
+/* ---------------------------------
+   Messages (Stylish Alerts)
+----------------------------------*/
+.success-box {
+  padding: 18px;
+  background: rgba(16,185,129,0.15);
+  border: 1.5px solid rgba(16,185,129,0.35);
+  color: #34d399;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.error-msg {
+  color: #f87171;
+  margin: 10px 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* ---------------------------------
+   Responsive
+----------------------------------*/
+@media (max-width: 480px) {
+  .page {
+    padding: 22px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  button {
+    font-size: 15px;
+  }
+}
